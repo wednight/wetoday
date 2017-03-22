@@ -3,7 +3,7 @@ version: '3'
 services:
 
   db:
-    build: ../servers/mariadb
+    build: mariadb
     image: study_db:1.0
     container_name: study_db
     ports:
