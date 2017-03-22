@@ -11,10 +11,10 @@ services:
     volumes:
       - db-data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: team
-      MYSQL_DATABASE: study
-      MYSQL_USER: team
-      MYSQL_PASSWORD: team
+      MYSQL_ROOT_PASSWORD: study
+      MYSQL_DATABASE: wetoday
+      MYSQL_USER: study
+      MYSQL_PASSWORD: study
 
 volumes:
   db-data:
