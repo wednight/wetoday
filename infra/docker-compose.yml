@@ -4,17 +4,17 @@ services:
 
   db:
     build: mariadb
-    image: study_db:1.0
-    container_name: study_db
+    image: wetoday_db:1.0
+    container_name: wetoday_db
     ports:
       - 3306:3306
     volumes:
       - db-data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: study
+      MYSQL_ROOT_PASSWORD: team
       MYSQL_DATABASE: wetoday
-      MYSQL_USER: study
-      MYSQL_PASSWORD: study
+      MYSQL_USER: team
+      MYSQL_PASSWORD: team
 
 volumes:
   db-data:
